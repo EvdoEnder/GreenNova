@@ -63,7 +63,7 @@
       document.body.style.overflow = 'hidden';
 
       sessionStorage.setItem(
-        'gstam_nav_open',
+        'greennova_nav_open',
         '1'
       );
 
@@ -87,7 +87,7 @@
       document.body.style.overflow = '';
 
       sessionStorage.removeItem(
-        'gstam_nav_open'
+        'greennova_nav_open'
       );
 
       toggle.focus();
@@ -413,7 +413,7 @@
 
 
     var key =
-      'gstam_dismissed_announce_' +
+      'greennova_dismissed_announce_' +
       id;
 
 
@@ -470,7 +470,7 @@
 
     var consent =
       getCookie(
-        'gstam_cookie_consent'
+        'greennova_cookie_consent'
       );
 
 
@@ -509,14 +509,14 @@
         function(){
 
           setCookie(
-            'gstam_cookie_consent',
+            'greennova_cookie_consent',
             'accepted',
             180
           );
 
 
           localStorage.setItem(
-            'gstam_analytics_pref',
+            'greennova_analytics_pref',
             'on'
           );
 
@@ -538,14 +538,14 @@
         function(){
 
           setCookie(
-            'gstam_cookie_consent',
+            'greennova_cookie_consent',
             'declined',
             180
           );
 
 
           localStorage.setItem(
-            'gstam_analytics_pref',
+            'greennova_analytics_pref',
             'off'
           );
 
@@ -739,7 +739,7 @@
       var list =
         JSON.parse(
           localStorage.getItem(
-            'gstam_recently_viewed'
+            'greennova_recently_viewed'
           ) || '[]'
         );
 
@@ -770,7 +770,7 @@
 
 
       localStorage.setItem(
-        'gstam_recently_viewed',
+        'greennova_recently_viewed',
         JSON.stringify(list)
       );
 
@@ -787,12 +787,12 @@
 
     if(
       sessionStorage.getItem(
-        'gstam_nav_open'
+        'greennova_nav_open'
       ) === '1'
     ){
 
       sessionStorage.removeItem(
-        'gstam_nav_open'
+        'greennova_nav_open'
       );
 
     }
